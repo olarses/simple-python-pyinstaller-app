@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') { 
             agent {
-                docker {
+                none {
                     image 'python:2-alpine' 
                 }
             }
